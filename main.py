@@ -26,8 +26,7 @@ def generate_sku(e):
     stock = document.getElementById("stock_quantity")
     # gets the values of the category, product, and stock quantity
 
-    sku = category.value + "-" + product.value[:3].upper() + "-" + stock.value
+    sku = category.value + product.value[:3].upper() + stock.value
     # calculates for the sku
 
     document.getElementById("sku-product").innerText = sku
-    # displays the sku
